@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.game-title{
+  background-color:goldenrod;
+}
+
+.game-container{
+  height: 95vh;
+  display: flex;
+}
+.game-title{
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+}
+.dice{
+  height: 20vh;
+  width: 10vw;
+  border: 1px solid black;
+}
+
+.player-container{
+  height: 100%;
+  width: 40%;
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-around;
+  background-color: bisque;
+}
+
+.player-title{
+  font-size: 2rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* border: 1px solid black; */
+  padding: 1rem;
+}
+
+.game-setting-container{
+  height: 100%;
+  width: 20%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-around;
+  background-color:darkgray
+}
+
+.btn{
+  font-weight: bold;
+  background-color: chocolate;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.btn:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.btn:active{
+  opacity: 0.7;
+  /* box-shadow: 0 5px #666; */
+  transform: translateY(1px);
+}
+
+.score-title{
+  font-size: 1.6rem;
+}
+.score{
+  font-size: 2rem;
+}
+
+.score-container{
+  height: 20vh;
+  width: 20vw;
+  /* border: 1px solid black; */
+  background-color: darksalmon;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.winner{
+  font-size: 1.6rem;
+  text-align: center;
+  color:navy;
+}
