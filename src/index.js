@@ -36,7 +36,6 @@ class App extends React.Component{
   }
 
   updateScore =(score,player)=>{
-    console.log(this.state.currentPlayer);
     if(!this.state.isGameOver){
       this.checkWinning(score,player);
       if(!this.state.isEndTurn){
@@ -50,12 +49,14 @@ class App extends React.Component{
   }
 
   hold =()=>{
-    if(this.state.isPlayedOnce){
-      this.setState({isEndTurn: true,isPlayedOnce: false},()=>{
-        this.updateScore(0,this.state.currentPlayer);
-        this.setState({isEndTurn: false});
-        this.switchTurn();
-      });
+    if(!this.state.isGameOver){
+      if(this.state.isPlayedOnce){
+        this.setState({isEndTurn: true,isPlayedOnce: false},()=>{
+          this.updateScore(0,this.state.currentPlayer);
+          this.setState({isEndTurn: false});
+          this.switchTurn();
+        });
+    }
     }
   }
 
